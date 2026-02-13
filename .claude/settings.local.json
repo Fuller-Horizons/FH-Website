@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s \"C:\\\\Users\\\\Desktop\\\\Documents\\\\Claude\\\\Website\")",
+      "Bash(dir:*)",
+      "WebFetch(domain:v0.app)",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\Desktop\\\\Downloads\\\\hardcode-video-url.zip'' | Format-List Name, Length\")",
+      "Bash(powershell:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}
