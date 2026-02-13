@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: "Fuller Horizons Website <onboarding@resend.dev>",
+      from: "Fuller Horizons Website <contact@fullerhorizons.net>",
       to: "contact@fullerhorizons.net",
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
