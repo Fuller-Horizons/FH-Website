@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ContactForm } from "@/components/contact-form"
+import { Phone, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contact | Fuller Horizons",
@@ -26,9 +27,64 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* Contact Options */}
+        <section className="bg-[#F3F2EF] py-12 lg:py-16">
+          <div className="mx-auto max-w-3xl px-6 lg:px-8">
+            <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
+              Ways to Connect
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Phone */}
+              <a
+                href="tel:+16312645178"
+                className="bg-white p-8 border-l-[3px] border-[#D4AF37] hover:shadow-lg transition-shadow group"
+              >
+                <div className="flex items-start gap-4">
+                  <Phone className="h-6 w-6 text-[#D4AF37] flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#0A1628] mb-2 group-hover:text-[#D4AF37] transition-colors">
+                      Call Directly
+                    </h3>
+                    <p className="text-[#4B5563] text-base font-medium">
+                      (631) 264-5178
+                    </p>
+                    <p className="text-sm text-[#6B7280] mt-2">
+                      For immediate strategic conversations
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              {/* Email */}
+              <a
+                href="mailto:contact@fullerhorizons.net"
+                className="bg-white p-8 border-l-[3px] border-[#D4AF37] hover:shadow-lg transition-shadow group"
+              >
+                <div className="flex items-start gap-4">
+                  <Mail className="h-6 w-6 text-[#D4AF37] flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#0A1628] mb-2 group-hover:text-[#D4AF37] transition-colors">
+                      Send an Email
+                    </h3>
+                    <p className="text-[#4B5563] text-base font-medium break-all">
+                      contact@fullerhorizons.net
+                    </p>
+                    <p className="text-sm text-[#6B7280] mt-2">
+                      For detailed inquiries and documentation
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Form Section */}
         <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-xl px-6 lg:px-8">
+            <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
+              Or Request a Conversation
+            </h2>
             <div className="bg-white p-8 lg:p-10">
               <ContactForm />
               

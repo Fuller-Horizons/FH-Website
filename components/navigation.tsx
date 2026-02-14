@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -45,15 +45,6 @@ export function Navigation() {
               </Link>
             ))}
             
-            {/* Phone number */}
-            <a 
-              href="tel:+16312645178" 
-              className="flex items-center gap-2 text-white text-base font-medium hover:text-[#D4AF37] transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span>(631) 264-5178</span>
-            </a>
-            
             {/* CTA Button */}
             <Link
               href="/contact"
@@ -92,14 +83,6 @@ export function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              
-              <a 
-                href="tel:+16312645178" 
-                className="flex items-center gap-2 text-white text-base font-medium py-2"
-              >
-                <Phone className="h-4 w-4" />
-                <span>(631) 264-5178</span>
-              </a>
               
               <Link
                 href="/contact"
