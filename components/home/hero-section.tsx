@@ -9,26 +9,36 @@ const slides = [
     headline: "Technology Decisions That Hold Up.",
     body: "Independent strategic technology advisory that helps growing businesses gain clarity, alignment, and confidence in every technology decision.",
     gradient: "from-[#0C1829] to-[#0F2035]",
+    buttonText: "Request a Strategic Assessment",
+    context: "I'm interested in learning more about strategic technology advisory services.",
   },
   {
     headline: "See the Full Picture of Your Technology Landscape",
     body: "A clear, executive-level review of how your current technology, vendors, and systems support your business goals.",
     gradient: "from-[#0D1B2E] to-[#0C1829]",
+    buttonText: "Request Technology Alignment Review",
+    context: "I'm interested in a Technology Alignment Review to understand how my current technology, vendors, and systems support my business goals.",
   },
   {
-    headline: "Strengthen Your Technology Foundation",
-    body: "Identify opportunities to improve alignment, reduce exposure, and get more value from your existing technology investments.",
+    headline: "Evaluate Your Vendor Relationships & Operational Risk",
+    body: "Leadership-level assessment of your technology risks, vendor alignment, and operational dependencies.",
     gradient: "from-[#0B1624] to-[#111D32]",
+    buttonText: "Request Risk & Vendor Review",
+    context: "I'm interested in an Operational Risk & Vendor Review to assess my vendor alignment and technology dependencies.",
   },
   {
-    headline: "Strategic Technology Guidance Aligned to Your Goals",
-    body: "Executive-level advisory that ensures your technology roadmap supports your long-term business strategy.",
+    headline: "Strategic Technology Advisory for Long-Term Success",
+    body: "Executive-level strategic guidance that aligns technology decisions with your long-term business strategy.",
     gradient: "from-[#0E1E33] to-[#0A1420]",
+    buttonText: "Request Strategic Advisory",
+    context: "I'm interested in Strategic Technology Advisory services to align technology decisions with my long-term business strategy.",
   },
   {
-    headline: "Keep Your Technology Ecosystem Working Together",
+    headline: "Independent Oversight of Your Vendor Ecosystem",
     body: "Ongoing strategic oversight to ensure your vendors, IT team, and infrastructure stay aligned with your business.",
     gradient: "from-[#0C1829] to-[#0D1F38]",
+    buttonText: "Request Quarterly Oversight",
+    context: "I'm interested in Quarterly Vendor Oversight to ensure my technology ecosystem remains aligned with my business.",
   },
 ]
 
@@ -105,6 +115,15 @@ export function HeroSection() {
     [scrollTo, stopAutoplay, startAutoplay]
   )
 
+  // Handle click on slide content to advance to next slide
+  const handleSlideClick = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollNext()
+      stopAutoplay()
+      startAutoplay()
+    }
+  }, [emblaApi, stopAutoplay, startAutoplay])
+
   return (
     <section
       id="main-content"
@@ -133,7 +152,8 @@ export function HeroSection() {
           }`}
         >
           <div
-            className={`bg-gradient-to-br ${slide.gradient} flex items-center justify-center h-screen md:h-auto md:min-h-[600px] px-4 py-20`}
+            className={`bg-gradient-to-br ${slide.gradient} flex items-center justify-center h-screen md:h-auto md:min-h-[600px] px-4 py-20 cursor-pointer`}
+            onClick={handleSlideClick}
           >
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
@@ -144,13 +164,13 @@ export function HeroSection() {
                 {slide.body}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" onClick={(e) => e.stopPropagation()}>
                 <Link
-                  href="/contact"
+                  href={`/contact?interest=${encodeURIComponent(slide.context)}`}
                   tabIndex={index === selectedIndex ? 0 : -1}
                   className="bg-[#D4AF37] text-[#0C1829] font-semibold px-8 py-4 rounded-lg hover:bg-[#F59E0B] transition-all text-lg w-full sm:w-auto"
                 >
-                  Request a Strategic Assessment
+                  {slide.buttonText}
                 </Link>
                 <Link
                   href="/the-fuller-approach"

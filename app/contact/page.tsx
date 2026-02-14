@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ContactForm } from "@/components/contact-form"
@@ -34,7 +35,9 @@ export default function ContactPage() {
               Request a Conversation
             </h2>
             <div className="bg-white p-8 lg:p-10">
-              <ContactForm />
+              <Suspense fallback={<div className="text-center py-8 text-[#4B5563]">Loading form...</div>}>
+                <ContactForm />
+              </Suspense>
               
               {/* Discretion Note */}
               <p className="mt-8 text-sm text-[#6B7280] text-center leading-relaxed">
