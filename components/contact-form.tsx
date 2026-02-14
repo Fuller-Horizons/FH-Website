@@ -1,9 +1,11 @@
 "use client"
 
 import React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 
 export function ContactForm() {
+  const searchParams = useSearchParams()
   const [formData, setFormData] = useState({
     name: "",
     organization: "",
@@ -14,6 +16,17 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState("")
+
+  // Pre-fill message from URL parameter
+  useEffect(() => {
+    const interest = searchParams.get("interest")
+    if (interest) {
+      setFormData((prev) => ({
+        ...prev,
+        message: interest,
+      }))
+    }
+  }, [searchParams])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

@@ -5,7 +5,6 @@ const footerLinks = [
   { href: "/", label: "Home" },
   { href: "/the-fuller-approach", label: "The Fuller Approach" },
   { href: "/services", label: "Services" },
-  { href: "/why-fuller-horizons", label: "Why Us" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
