@@ -19,13 +19,23 @@ export async function POST(request: Request) {
 
     // Send email using Resend
     if (!resend) {
-      console.warn("RESEND_API_KEY not configured. Contact form submission logged but not emailed.")
-      return NextResponse.json({ success: true })
+      console.error("RESEND_API_KEY not configured. Contact form submission logged but not emailed.")
+      console.error("Submission data:", { name, organization, email, phone, messageLength: message.length })
+      return NextResponse.json(
+        { error: "Email service not configured" },
+        { status: 500 }
+      )
     }
 
-    await resend.emails.send({
-      from: "Fuller Horizons Website <contact@fullerhorizons.net>",
-      to: "contact@fullerhorizons.net",
+    console.log("[v0] Attempting to send email via Resend")
+    console.log("[v0] From:", "onboarding@resend.dev")
+    console.log("[v0] To:", process.env.CONTACT_EMAIL || "contact@fullerhorizons.net")
+    console.log("[v0] Name:", name)
+    console.log("[v0] Email:", email)
+
+    const result = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: process.env.CONTACT_EMAIL || "contact@fullerhorizons.net",
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
@@ -51,9 +61,11 @@ ${message}
       `,
     })
 
+    console.log("[v0] Email sent successfully:", result)
     return NextResponse.json({ success: true })
   } catch (error) {
-    console.error("Contact form error:", error)
+    console.error("[v0] Contact form error:", error)
+    console.error("[v0] Error details:", JSON.stringify(error, null, 2))
     return NextResponse.json(
       { error: "Failed to send message" },
       { status: 500 }
