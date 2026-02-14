@@ -127,7 +127,7 @@ export function HeroSection() {
   return (
     <section
       id="main-content"
-      className="relative h-screen md:h-auto md:min-h-[600px] overflow-hidden"
+      className="relative min-h-[calc(100vh-5rem)] md:min-h-[600px] overflow-hidden"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -152,7 +152,7 @@ export function HeroSection() {
           }`}
         >
           <div
-            className={`bg-gradient-to-br ${slide.gradient} flex items-center justify-center h-screen md:h-auto md:min-h-[600px] px-4 py-20 cursor-pointer`}
+            className={`bg-gradient-to-br ${slide.gradient} flex items-center justify-center min-h-[calc(100vh-5rem)] md:min-h-[600px] px-4 py-20 cursor-pointer`}
             onClick={handleSlideClick}
           >
             <div className="max-w-4xl mx-auto text-center">
