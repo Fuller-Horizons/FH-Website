@@ -27,11 +27,28 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* Contact Form Section */}
+        <section className="bg-[#F3F2EF] py-16 lg:py-24">
+          <div className="mx-auto max-w-xl px-6 lg:px-8">
+            <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
+              Request a Conversation
+            </h2>
+            <div className="bg-white p-8 lg:p-10">
+              <ContactForm />
+              
+              {/* Discretion Note */}
+              <p className="mt-8 text-sm text-[#6B7280] text-center leading-relaxed">
+                Discretion matters. Information shared is treated as confidential.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Options */}
         <section className="bg-[#F3F2EF] py-12 lg:py-16">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
             <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
-              Ways to Connect
+              Other Ways to Connect
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {/* Phone */}
@@ -75,23 +92,6 @@ export default function ContactPage() {
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Form Section */}
-        <section className="bg-[#F3F2EF] py-16 lg:py-24">
-          <div className="mx-auto max-w-xl px-6 lg:px-8">
-            <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
-              Or Request a Conversation
-            </h2>
-            <div className="bg-white p-8 lg:p-10">
-              <ContactForm />
-              
-              {/* Discretion Note */}
-              <p className="mt-8 text-sm text-[#6B7280] text-center leading-relaxed">
-                Discretion matters. Information shared is treated as confidential.
-              </p>
             </div>
           </div>
         </section>
