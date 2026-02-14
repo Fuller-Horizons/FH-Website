@@ -28,6 +28,25 @@ export function ContactForm() {
     }
   }, [searchParams])
 
+  const formatPhoneNumber = (value: string) => {
+    // Remove all non-digit characters
+    const phoneNumber = value.replace(/\D/g, "")
+    
+    // Format the phone number as (###) ###-####
+    if (phoneNumber.length <= 3) {
+      return phoneNumber
+    } else if (phoneNumber.length <= 6) {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`
+    } else {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`
+    }
+  }
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatPhoneNumber(e.target.value)
+    setFormData({ ...formData, phone: formatted })
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -116,6 +135,7 @@ export function ContactForm() {
           type="text"
           id="organization"
           name="organization"
+          required
           value={formData.organization}
           onChange={(e) =>
             setFormData({ ...formData, organization: e.target.value })
@@ -155,10 +175,12 @@ export function ContactForm() {
           type="tel"
           id="phone"
           name="phone"
+          required
           value={formData.phone}
-          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+          onChange={handlePhoneChange}
           className="mt-2 block w-full border border-gray-300 bg-white px-4 py-3 text-[#0A1628] focus:border-[#D4AF37] focus:outline-none focus:ring-1 focus:ring-[#D4AF37] transition-colors"
           placeholder="(555) 555-5555"
+          maxLength={14}
         />
       </div>
 
