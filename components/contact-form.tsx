@@ -33,7 +33,11 @@ export function ContactForm() {
     setIsSubmitting(true)
     setError("")
 
+    console.log("[v0] Contact form submitted")
+    console.log("[v0] Form data:", formData)
+
     try {
+      console.log("[v0] Sending request to /api/contact")
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -42,12 +46,18 @@ export function ContactForm() {
         body: JSON.stringify(formData),
       })
 
+      console.log("[v0] Response status:", response.status)
+      const responseData = await response.json()
+      console.log("[v0] Response data:", responseData)
+
       if (!response.ok) {
-        throw new Error("Failed to send message")
+        throw new Error(responseData.error || "Failed to send message")
       }
 
+      console.log("[v0] Form submitted successfully")
       setIsSubmitted(true)
-    } catch {
+    } catch (err) {
+      console.error("[v0] Contact form submission error:", err)
       setError("There was an error sending your message. Please try again or call us directly.")
     } finally {
       setIsSubmitting(false)
