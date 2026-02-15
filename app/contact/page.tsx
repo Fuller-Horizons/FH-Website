@@ -31,7 +31,7 @@ export default function ContactPage() {
         {/* Contact Form Section */}
         <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-xl px-6 lg:px-8">
-            <h2 className="text-[28px] font-medium text-[#0A1628] leading-snug" style={{ fontFamily: "var(--font-display)" }} text-center mb-8">
+            <h2 className="text-[28px] font-medium text-[#0A1628] leading-snug text-center mb-8" style={{ fontFamily: "var(--font-display)" }}>
               Request a Conversation
             </h2>
             <div className="bg-white p-8 lg:p-10">
@@ -50,7 +50,7 @@ export default function ContactPage() {
         {/* Contact Options */}
         <section className="bg-[#F3F2EF] py-12 lg:py-16">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <h2 className="text-[28px] font-medium text-[#0A1628] leading-snug" style={{ fontFamily: "var(--font-display)" }} text-center mb-8">
+            <h2 className="text-[28px] font-medium text-[#0A1628] leading-snug text-center mb-8" style={{ fontFamily: "var(--font-display)" }}>
               Other Ways to Connect
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
