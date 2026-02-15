@@ -39,7 +39,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[14px] font-medium tracking-wide uppercase text-white/80 transition-all duration-300 ease-out hover:text-white relative after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:h-px after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 after:ease-out hover:after:w-full"
+                className="text-[15px] font-semibold tracking-wider uppercase text-white transition-all duration-300 ease-out hover:text-[#D4AF37] relative after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 after:ease-out hover:after:w-full"
               >
                 {link.label}
               </Link>
@@ -77,7 +77,7 @@ export function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-base font-medium text-white/80 transition-colors hover:text-white py-2"
+                  className="text-lg font-semibold text-white transition-colors hover:text-[#D4AF37] py-2 uppercase tracking-wide"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
