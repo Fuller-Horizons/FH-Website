@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Case Studies & Executive Outcomes | Fuller Horizons",
@@ -38,9 +40,11 @@ const caseStudies = [
 
 export default function CaseStudiesPage() {
   return (
-    <main className="min-h-screen bg-[#FAF9F7]">
+    <div className="flex min-h-screen flex-col scroll-smooth">
+      <Navigation />
+      <main className="flex-1 bg-[#FAF9F7]">
       {/* Hero Section */}
-      <section className="bg-[#0F1629] text-white py-20 lg:py-28">
+      <section className="bg-[#0F1629] text-white pt-28 pb-20 lg:pt-36 lg:pb-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 
@@ -177,5 +181,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
     </main>
+      <Footer />
+    </div>
   )
 }

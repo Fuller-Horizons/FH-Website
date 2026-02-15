@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <Navigation />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-[#F9F8F6] pt-8 pb-6 lg:pt-12 lg:pb-8">
+        <section className="bg-[#F9F8F6] pt-28 pb-6 lg:pt-36 lg:pb-8">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
             <Link
               href="/blog"

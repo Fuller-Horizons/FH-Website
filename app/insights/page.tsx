@@ -36,7 +36,7 @@ export default function InsightsPage() {
       <Navigation />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-[#F9F8F6] pt-16 pb-12 lg:pt-24 lg:pb-16">
+        <section className="bg-[#F9F8F6] pt-28 pb-12 lg:pt-36 lg:pb-16">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <h1
               className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-balance leading-tight"
