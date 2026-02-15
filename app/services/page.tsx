@@ -138,7 +138,7 @@ export default function ServicesPage() {
         <section className="bg-[#FAF9F7] pt-28 pb-16 lg:pt-36 lg:pb-20">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <h1
-              className="text-4xl lg:text-[56px] font-normal tracking-tight text-[#0A1628] text-balance leading-tight"
+              className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-balance leading-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Structured Advisory Engagements.
@@ -176,7 +176,7 @@ export default function ServicesPage() {
                     {/* Left Column */}
                     <div className="space-y-6">
                       <div>
-                        <h3 className="text-xs font-semibold uppercase tracking-widest text-[#A89060]">
+                        <h3 className="text-xs font-semibold text-[#A89060]">
                           Engagement Purpose
                         </h3>
                         <p className="mt-3 text-[#4B5563] leading-relaxed font-sans">
@@ -185,7 +185,7 @@ export default function ServicesPage() {
                       </div>
 
                       <div>
-                        <h3 className="text-xs font-semibold uppercase tracking-widest text-[#A89060]">
+                        <h3 className="text-xs font-semibold text-[#A89060]">
                           Defined Scope
                         </h3>
                         <ul className="mt-3 space-y-2 text-[#4B5563] leading-relaxed font-sans">
@@ -202,7 +202,7 @@ export default function ServicesPage() {
                     {/* Right Column */}
                     <div className="space-y-6">
                       <div>
-                        <h3 className="text-xs font-semibold uppercase tracking-widest text-[#A89060]">
+                        <h3 className="text-xs font-semibold text-[#A89060]">
                           Executive Deliverables Produced
                         </h3>
                         <ul className="mt-3 space-y-2 text-[#4B5563] leading-relaxed font-sans">
@@ -216,7 +216,7 @@ export default function ServicesPage() {
                       </div>
 
                       <div>
-                        <h3 className="text-xs font-semibold uppercase tracking-widest text-[#A89060]">
+                        <h3 className="text-xs font-semibold text-[#A89060]">
                           Ideal Use Case
                         </h3>
                         <p className="mt-3 text-[#4B5563] leading-relaxed font-sans">
@@ -258,7 +258,7 @@ export default function ServicesPage() {
                     >
                       Digital & Software Ecosystem Review
                     </h2>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-[#A89060]">
+                    <p className="mt-2 text-xs font-semibold text-[#A89060]">
                       Optional Add-On
                     </p>
                   </div>
@@ -304,7 +304,7 @@ export default function ServicesPage() {
               ].map((principle) => (
                 <div key={principle} className="text-center">
                   <div className="mx-auto h-px w-8 bg-[#C4A87A]" />
-                  <p className="mt-4 text-sm font-semibold uppercase tracking-widest text-[#0A1628] font-sans">
+                  <p className="mt-4 text-sm font-semibold text-[#0A1628] font-sans">
                     {principle}
                   </p>
                 </div>
@@ -316,7 +316,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="mt-8 inline-block bg-[#0A1628] text-white px-8 py-3 text-sm font-medium uppercase tracking-wider hover:bg-[#162033] transition-colors font-sans"
+              className="mt-8 inline-block bg-[#0A1628] text-white px-8 py-3 text-base font-semibold hover:bg-[#162033] transition-colors font-sans"
             >
               Start a Conversation
             </Link>

@@ -49,7 +49,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Column 1: Mission Statement */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#D4AF37] mb-4">Our Mission</h3>
+            <h3 className="text-sm font-semibold text-[#D4AF37] mb-4">Our Mission</h3>
             <p className="text-[#FAF9F7] text-sm leading-relaxed">
               {missionStatement}
             </p>
@@ -57,7 +57,7 @@ export function Footer() {
 
           {/* Column 2: Core Advisory Areas */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#D4AF37] mb-4">Core Advisory Areas</h3>
+            <h3 className="text-sm font-semibold text-[#D4AF37] mb-4">Core Advisory Areas</h3>
             <ul className="space-y-3">
               {advisoryAreas.map((area) => (
                 <li key={area} className="text-[#FAF9F7] text-sm">
@@ -69,7 +69,7 @@ export function Footer() {
 
           {/* Column 3: Geographic Focus */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#D4AF37] mb-4">Geographic Focus</h3>
+            <h3 className="text-sm font-semibold text-[#D4AF37] mb-4">Geographic Focus</h3>
             <ul className="space-y-3">
               {geographicFocus.map((location) => (
                 <li key={location} className="text-[#FAF9F7] text-sm">

@@ -50,7 +50,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             >
               &larr; Back to Insights
             </Link>
-            <h1 className="font-serif text-3xl lg:text-5xl font-normal tracking-tight text-[#0A1628] text-balance">
+            <h1 className="text-[28px] lg:text-[56px] font-medium text-[#0A1628] text-balance leading-tight" style={{ fontFamily: "var(--font-display)" }}>
               {post.title}
             </h1>
             <p className="mt-4 text-sm text-[#6B7280]">

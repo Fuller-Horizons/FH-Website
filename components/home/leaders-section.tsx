@@ -19,7 +19,7 @@ export function LeadersSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Main Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-12 lg:mb-16">
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-5xl font-semibold text-[#0A1628] mb-4">
+          <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] mb-4 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
             Built for Leaders in Complex Environments.
           </h2>
           <div className="mx-auto mt-6 h-px w-24 bg-[#A89060]" />
@@ -32,7 +32,7 @@ export function LeadersSection() {
               key={audience.title}
               className="bg-white rounded-lg shadow-sm p-8 border-t-2 border-[#A89060]"
             >
-              <h3 className="font-serif text-2xl font-semibold text-[#0A1628] mb-4">
+              <h3 className="text-[28px] font-medium text-[#0A1628] mb-4 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
                 {audience.title}
               </h3>
               <p className="text-base text-[#4B5563] leading-relaxed">
@@ -44,7 +44,7 @@ export function LeadersSection() {
 
         {/* Serving Long Island Section */}
         <div className="mx-auto max-w-3xl text-center">
-          <h3 className="font-serif text-3xl font-semibold text-[#0A1628] mb-4">
+          <h3 className="text-[28px] font-medium text-[#0A1628] mb-4 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
             Serving Long Island and Beyond
           </h3>
           <div className="mx-auto mt-4 h-px w-20 bg-[#A89060] mb-6" />

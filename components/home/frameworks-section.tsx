@@ -29,7 +29,7 @@ export function FrameworksSection() {
       <div className="container mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="font-display text-4xl font-semibold text-white lg:text-5xl">
+          <h2 className="text-[28px] lg:text-[40px] font-medium text-white leading-snug" style={{ fontFamily: "var(--font-display)" }}>
             Frameworks Prevent Avoidable Mistakes.
           </h2>
           <div className="mx-auto mt-4 h-px w-24 bg-[#A89060]" />

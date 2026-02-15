@@ -44,7 +44,7 @@ export default function CaseStudiesPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 
-              className="text-5xl lg:text-6xl font-semibold tracking-tight mb-6"
+              className="text-[40px] lg:text-[56px] font-medium mb-6 leading-tight"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               Defensible Decisions in Action.

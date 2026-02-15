@@ -21,7 +21,7 @@ export function HeroSection() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
         {/* Headline */}
         <h1
-          className="font-[var(--font-display)] text-[#0E1726] tracking-tight text-balance"
+          className="font-[var(--font-display)] text-[#0E1726] text-balance"
           style={{
             fontFamily: "var(--font-display)",
             fontSize: "clamp(36px, 5vw, 56px)",
@@ -61,7 +61,7 @@ export function HeroSection() {
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">
           <Link
             href="/contact?interest=I%27m%20interested%20in%20a%20strategic%20conversation"
-            className="inline-flex items-center justify-center font-sans font-semibold tracking-wide text-[15px] px-8 py-4 transition-all duration-200 w-full sm:w-auto"
+            className="inline-flex items-center justify-center font-sans font-semibold text-base px-8 py-4 transition-all duration-200 w-full sm:w-auto"
             style={{
               backgroundColor: "#0E1726",
               color: "#FFFFFF",
@@ -72,7 +72,7 @@ export function HeroSection() {
 
           <Link
             href="/the-fuller-approach"
-            className="inline-flex items-center justify-center font-sans font-medium tracking-wide text-[15px] px-8 py-4 transition-colors duration-200 w-full sm:w-auto"
+            className="inline-flex items-center justify-center font-sans font-semibold text-base px-8 py-4 transition-colors duration-200 w-full sm:w-auto"
             style={{
               color: "#0E1726",
               borderBottom: "1px solid #A89060",

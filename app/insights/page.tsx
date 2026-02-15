@@ -39,7 +39,7 @@ export default function InsightsPage() {
         <section className="bg-[#F9F8F6] pt-16 pb-12 lg:pt-24 lg:pb-16">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <h1
-              className="text-4xl lg:text-5xl font-medium tracking-tight text-[#0A1628] text-balance"
+              className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-balance leading-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Strategic Clarity for Complex Decisions

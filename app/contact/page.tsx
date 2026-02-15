@@ -19,7 +19,7 @@ export default function ContactPage() {
         {/* Hero Section */}
         <section className="bg-[#F9F8F6] pt-8 pb-6 lg:pt-12 lg:pb-8">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <h1 className="font-serif text-4xl lg:text-5xl font-normal tracking-tight text-[#0A1628] text-center text-balance">
+            <h1 className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-center text-balance leading-tight" style={{ fontFamily: "var(--font-display)" }}>
               Contact
             </h1>
             <p className="mt-8 text-lg text-[#4B5563] leading-relaxed text-center">
@@ -31,7 +31,7 @@ export default function ContactPage() {
         {/* Contact Form Section */}
         <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-xl px-6 lg:px-8">
-            <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
+            <h2 className="text-[28px] font-medium text-[#0A1628] leading-snug" style={{ fontFamily: "var(--font-display)" }} text-center mb-8">
               Request a Conversation
             </h2>
             <div className="bg-white p-8 lg:p-10">
@@ -50,7 +50,7 @@ export default function ContactPage() {
         {/* Contact Options */}
         <section className="bg-[#F3F2EF] py-12 lg:py-16">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <h2 className="text-2xl font-serif text-[#0A1628] text-center mb-8">
+            <h2 className="text-[28px] font-medium text-[#0A1628] leading-snug" style={{ fontFamily: "var(--font-display)" }} text-center mb-8">
               Other Ways to Connect
             </h2>
             <div className="grid md:grid-cols-2 gap-6">

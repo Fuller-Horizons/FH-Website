@@ -9,7 +9,7 @@ export function TrustSection() {
   return (
     <section className="bg-[#0C1829] py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white text-center mb-6">
+        <h2 className="text-[28px] lg:text-[40px] font-medium text-white text-center mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
           Independent by Design
         </h2>
 
