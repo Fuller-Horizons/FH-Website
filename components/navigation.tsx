@@ -39,9 +39,10 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[15px] font-bold tracking-wider uppercase text-white transition-all duration-300 ease-out hover:text-[#D4AF37] hover:scale-105 relative after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 after:ease-out hover:after:w-full"
+                className="text-[16px] font-bold tracking-wider uppercase text-white transition-all duration-300 ease-out hover:text-[#D4AF37] hover:scale-105 relative after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:w-0 after:bg-[#D4AF37] after:transition-all after:duration-300 after:ease-out hover:after:w-full"
                 style={{
-                  textShadow: '0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1)'
+                  textShadow: '0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1)',
+                  WebkitTextStroke: '0.5px rgba(0, 0, 0, 0.3)'
                 }}
               >
                 {link.label}
@@ -80,10 +81,11 @@ export function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-lg font-bold text-white transition-all hover:text-[#D4AF37] py-2 uppercase tracking-wide hover:translate-x-1"
+                  className="text-xl font-bold text-white transition-all hover:text-[#D4AF37] py-2 uppercase tracking-wide hover:translate-x-1"
                   onClick={() => setMobileMenuOpen(false)}
                   style={{
-                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1)'
+                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1)',
+                    WebkitTextStroke: '0.5px rgba(0, 0, 0, 0.3)'
                   }}
                 >
                   {link.label}
