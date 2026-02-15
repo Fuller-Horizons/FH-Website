@@ -5,6 +5,7 @@ import { SupportSection } from "@/components/home/support-section"
 import { ServicesOverview } from "@/components/home/services-overview"
 import { EnvironmentSection } from "@/components/home/environment-section"
 import { LeadersSection } from "@/components/home/leaders-section"
+import { FrameworksSection } from "@/components/home/frameworks-section"
 import { TrustSection } from "@/components/home/trust-section"
 import { CTASection } from "@/components/home/cta-section"
 
@@ -18,6 +19,7 @@ export default function HomePage() {
         <ServicesOverview />
         <EnvironmentSection />
         <LeadersSection />
+        <FrameworksSection />
         <TrustSection />
         <CTASection />
       </main>
