@@ -28,12 +28,35 @@ export function ContactForm() {
     }
   }, [searchParams])
 
+  const formatPhoneNumber = (value: string) => {
+    // Remove all non-digit characters
+    const phoneNumber = value.replace(/\D/g, "")
+    
+    // Format the phone number as (###) ###-####
+    if (phoneNumber.length <= 3) {
+      return phoneNumber
+    } else if (phoneNumber.length <= 6) {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`
+    } else {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`
+    }
+  }
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatPhoneNumber(e.target.value)
+    setFormData({ ...formData, phone: formatted })
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     setError("")
 
+    console.log("[v0] Contact form submitted")
+    console.log("[v0] Form data:", formData)
+
     try {
+      console.log("[v0] Sending request to /api/contact")
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -42,12 +65,18 @@ export function ContactForm() {
         body: JSON.stringify(formData),
       })
 
+      console.log("[v0] Response status:", response.status)
+      const responseData = await response.json()
+      console.log("[v0] Response data:", responseData)
+
       if (!response.ok) {
-        throw new Error("Failed to send message")
+        throw new Error(responseData.error || "Failed to send message")
       }
 
+      console.log("[v0] Form submitted successfully")
       setIsSubmitted(true)
-    } catch {
+    } catch (err) {
+      console.error("[v0] Contact form submission error:", err)
       setError("There was an error sending your message. Please try again or call us directly.")
     } finally {
       setIsSubmitting(false)
@@ -106,6 +135,7 @@ export function ContactForm() {
           type="text"
           id="organization"
           name="organization"
+          required
           value={formData.organization}
           onChange={(e) =>
             setFormData({ ...formData, organization: e.target.value })
@@ -145,10 +175,12 @@ export function ContactForm() {
           type="tel"
           id="phone"
           name="phone"
+          required
           value={formData.phone}
-          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+          onChange={handlePhoneChange}
           className="mt-2 block w-full border border-gray-300 bg-white px-4 py-3 text-[#0A1628] focus:border-[#D4AF37] focus:outline-none focus:ring-1 focus:ring-[#D4AF37] transition-colors"
           placeholder="(555) 555-5555"
+          maxLength={14}
         />
       </div>
 
@@ -177,7 +209,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-[#0C1829] px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-[#1a2942] disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-[#0C1829] px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-[#1a2942] disabled:opacity-50 disabled:cursor-not-allowed font-sans"
       >
         {isSubmitting ? "Sending..." : "Request a Conversation"}
       </button>

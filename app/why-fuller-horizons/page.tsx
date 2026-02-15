@@ -51,9 +51,9 @@ export default function WhyFullerHorizonsPage() {
       <Navigation />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-[#F9F8F6] pt-8 pb-6 lg:pt-12 lg:pb-8">
+        <section className="bg-[#F9F8F6] pt-28 pb-6 lg:pt-36 lg:pb-8">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-            <h1 className="font-serif text-4xl lg:text-5xl font-normal tracking-tight text-[#0A1628] text-balance">
+            <h1 className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-balance leading-tight" style={{ fontFamily: "var(--font-display)" }}>
               Why Fuller Horizons
             </h1>
             <p className="mt-8 text-lg text-[#4B5563] leading-relaxed">
@@ -122,7 +122,7 @@ export default function WhyFullerHorizonsPage() {
         {/* CTA Section */}
         <section className="bg-[#0C1829] py-16 lg:py-24">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-white mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
               Ready for an independent perspective?
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-10">

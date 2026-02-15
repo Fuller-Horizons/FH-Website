@@ -87,6 +87,7 @@
 @theme inline {
   --font-sans: 'DM Sans', 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   
   --color-navy: var(--navy);

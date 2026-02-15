@@ -27,7 +27,7 @@ export function ServicesOverview() {
   return (
     <section className="bg-[#F3F2EF] py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#0A1628] text-center mb-12">
+        <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
           How Fuller Horizons Works With You
         </h2>
 

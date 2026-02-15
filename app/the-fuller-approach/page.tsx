@@ -69,9 +69,9 @@ export default function TheFullerApproachPage() {
       <Navigation />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-[#F9F8F6] pt-8 pb-6 lg:pt-12 lg:pb-8">
+        <section className="bg-[#F9F8F6] pt-28 pb-6 lg:pt-36 lg:pb-8">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <h1 className="font-serif text-4xl lg:text-5xl font-normal tracking-tight text-[#0A1628] text-center text-balance">
+            <h1 className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-center text-balance leading-tight" style={{ fontFamily: "var(--font-display)" }}>
               The Fuller Approach
             </h1>
             <p className="mt-6 text-xl text-[#D4AF37] font-medium text-center">
@@ -86,7 +86,7 @@ export default function TheFullerApproachPage() {
         {/* What Fuller Horizons Is Section */}
         <section className="bg-[#F3F2EF] py-16 lg:py-20">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <h2 className="text-3xl font-serif text-[#0A1628] text-center mb-12">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
               What Fuller Horizons Brings
             </h2>
             <div className="grid gap-8 lg:grid-cols-3">
@@ -107,7 +107,7 @@ export default function TheFullerApproachPage() {
         {/* How We're Different Section */}
         <section className="bg-[#F9F8F6] py-16 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <h2 className="text-3xl font-serif text-[#0A1628] text-center mb-12">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
               What Fuller Horizons Is Not
             </h2>
             <div className="space-y-6">
@@ -131,13 +131,13 @@ export default function TheFullerApproachPage() {
         {/* Steps Section */}
         <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <h2 className="text-3xl font-serif text-[#0A1628] text-center mb-12">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
               How We Work Together
             </h2>
             <div className="space-y-8">
               {steps.map((step) => (
                 <div key={step.number} className="bg-white p-8 lg:p-10 flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 border-l-[3px] border-[#D4AF37]">
-                  <span className="text-[#D4AF37] font-serif text-5xl lg:text-6xl font-normal leading-none">
+                  <span className="text-[#D4AF37] text-5xl lg:text-6xl font-normal leading-none" style={{ fontFamily: "var(--font-display)" }}>
                     {step.number}
                   </span>
                   <div className="flex-1">
@@ -157,7 +157,7 @@ export default function TheFullerApproachPage() {
         {/* Role Clarity Section */}
         <section className="bg-[#F9F8F6] py-16 lg:py-20">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-            <h2 className="text-2xl font-serif text-[#0A1628] mb-6">
+            <h2 className="text-[28px] font-medium text-[#0A1628] mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
               The Scope of My Role
             </h2>
             <p className="text-lg text-[#4B5563] leading-relaxed mb-6">
@@ -176,7 +176,7 @@ export default function TheFullerApproachPage() {
               Long Island has a strong ecosystem of IT service providers. Fuller Horizons exists to help business owners navigate that ecosystem with clarity — ensuring that every technology relationship, investment, and decision supports the business it was meant to serve.
             </p>
             <blockquote>
-              <p className="font-serif text-2xl lg:text-3xl text-[#D4AF37] italic leading-relaxed">
+              <p className="text-2xl lg:text-3xl text-[#D4AF37] italic leading-relaxed" style={{ fontFamily: "var(--font-display)" }}>
                 "Discipline at the beginning prevents regret at the end."
               </p>
             </blockquote>
@@ -186,7 +186,7 @@ export default function TheFullerApproachPage() {
         {/* CTA Section */}
         <section className="bg-[#F9F8F6] py-16 lg:py-24">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#0A1628] mb-6">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
               Ready for an independent perspective?
             </h2>
             <p className="text-lg text-[#4B5563] leading-relaxed mb-10">

@@ -18,9 +18,9 @@ export default function BlogPage() {
       <Navigation />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-[#F9F8F6] pt-8 pb-6 lg:pt-12 lg:pb-8">
+        <section className="bg-[#F9F8F6] pt-28 pb-6 lg:pt-36 lg:pb-8">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <h1 className="font-serif text-4xl lg:text-5xl font-normal tracking-tight text-[#0A1628] text-center text-balance">
+            <h1 className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-center text-balance leading-tight" style={{ fontFamily: "var(--font-display)" }}>
               Insights
             </h1>
             <p className="mt-8 text-lg text-[#4B5563] leading-relaxed text-center">

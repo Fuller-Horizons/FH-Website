@@ -4,7 +4,11 @@ import { HeroSection } from "@/components/home/hero-section"
 import { SupportSection } from "@/components/home/support-section"
 import { ServicesOverview } from "@/components/home/services-overview"
 import { EnvironmentSection } from "@/components/home/environment-section"
+import { LeadersSection } from "@/components/home/leaders-section"
+import { FrameworksSection } from "@/components/home/frameworks-section"
+import { AdvisorSection } from "@/components/home/advisor-section"
 import { TrustSection } from "@/components/home/trust-section"
+import { CommitmentSection } from "@/components/home/commitment-section"
 import { CTASection } from "@/components/home/cta-section"
 
 export default function HomePage() {
@@ -16,7 +20,11 @@ export default function HomePage() {
         <SupportSection />
         <ServicesOverview />
         <EnvironmentSection />
+        <LeadersSection />
+        <FrameworksSection />
+        <AdvisorSection />
         <TrustSection />
+        <CommitmentSection />
         <CTASection />
       </main>
       <Footer />
