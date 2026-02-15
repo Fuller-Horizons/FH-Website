@@ -5,8 +5,8 @@ export function HeroSection() {
   return (
     <section
       id="main-content"
-      className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: "#0A1628" }}
+      className="relative flex items-center justify-center overflow-hidden"
+      style={{ backgroundColor: "#0A1628", minHeight: "88vh" }}
     >
       {/* Background image */}
       <Image
@@ -14,21 +14,21 @@ export function HeroSection() {
         alt=""
         fill
         className="object-cover pointer-events-none select-none"
-        style={{ opacity: 0.7, filter: "saturate(0.85)" }}
+        style={{ opacity: 0.65, filter: "saturate(0.8) brightness(0.9)" }}
         priority
       />
 
-      {/* Dark overlay for text readability */}
+      {/* Dark overlay for text readability — 28% opacity, left-to-right */}
       <div
         className="absolute inset-0 z-[1]"
         style={{
-          background: "linear-gradient(to right, rgba(10, 22, 40, 0.75) 0%, rgba(10, 22, 40, 0.5) 50%, rgba(10, 22, 40, 0.35) 100%)",
+          background: "linear-gradient(to right, rgba(10, 22, 40, 0.78) 0%, rgba(10, 22, 40, 0.55) 45%, rgba(10, 22, 40, 0.3) 100%)",
         }}
         aria-hidden="true"
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 md:py-40 text-center">
+      <div className="relative z-10 max-w-[860px] mx-auto px-6 py-36 md:py-44 text-center">
         {/* Headline */}
         <h1
           className="text-white text-balance"
@@ -36,7 +36,8 @@ export function HeroSection() {
             fontFamily: "var(--font-display)",
             fontSize: "clamp(36px, 5vw, 56px)",
             lineHeight: 1.1,
-            fontWeight: 500,
+            fontWeight: 700,
+            letterSpacing: "-0.01em",
           }}
         >
           Decisions That Hold Up
@@ -46,9 +47,9 @@ export function HeroSection() {
 
         {/* Gold divider */}
         <div
-          className="mx-auto my-8"
+          className="mx-auto mt-10 mb-10"
           style={{
-            width: "80px",
+            width: "72px",
             height: "1px",
             backgroundColor: "#A89060",
           }}
@@ -59,9 +60,10 @@ export function HeroSection() {
         <p
           className="font-sans max-w-2xl mx-auto text-balance"
           style={{
-            fontSize: "clamp(16px, 2vw, 20px)",
-            lineHeight: 1.6,
-            color: "rgba(255, 255, 255, 0.85)",
+            fontSize: "clamp(16px, 1.8vw, 19px)",
+            lineHeight: 1.65,
+            color: "rgba(255, 255, 255, 0.82)",
+            letterSpacing: "0.01em",
           }}
         >
           Independent strategic advisory for leaders who require governance
@@ -69,28 +71,45 @@ export function HeroSection() {
         </p>
 
         {/* CTAs */}
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">
+        <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6">
+          {/* Primary CTA — solid institutional button */}
           <Link
             href="/contact?interest=I%27m%20interested%20in%20a%20strategic%20conversation"
-            className="inline-flex items-center justify-center font-sans font-semibold text-base px-8 py-4 transition-all duration-200 w-full sm:w-auto"
+            className="inline-flex items-center justify-center font-sans text-base w-full sm:w-auto transition-all duration-200 hover:bg-[#142a4d]"
             style={{
-              backgroundColor: "#0E1726",
+              backgroundColor: "#0B1F3A",
               color: "#FFFFFF",
-              border: "1px solid #A89060",
+              border: "1px solid rgba(168, 144, 96, 0.6)",
+              padding: "17px 38px",
+              fontWeight: 650,
+              letterSpacing: "0.3px",
+              borderRadius: "5px",
             }}
           >
             Request a Strategic Conversation
           </Link>
 
+          {/* Secondary CTA — minimal text link */}
           <Link
             href="/the-fuller-approach"
-            className="inline-flex items-center justify-center font-sans font-semibold text-base px-8 py-4 transition-colors duration-200 w-full sm:w-auto"
+            className="inline-flex items-center justify-center font-sans text-base w-full sm:w-auto transition-colors duration-200 group"
             style={{
-              color: "rgba(255, 255, 255, 0.9)",
-              borderBottom: "1px solid #A89060",
+              color: "rgba(255, 255, 255, 0.85)",
+              padding: "17px 8px",
+              fontWeight: 500,
+              letterSpacing: "0.2px",
             }}
           >
-            Explore the Fuller Approach
+            <span
+              className="relative"
+            >
+              Explore the Fuller Approach
+              <span
+                className="absolute left-[8%] right-[8%] bottom-[-3px] h-[1px]"
+                style={{ backgroundColor: "rgba(168, 144, 96, 0.7)" }}
+                aria-hidden="true"
+              />
+            </span>
           </Link>
         </div>
       </div>
