@@ -34,15 +34,28 @@ export function Footer() {
   return (
     <footer className="bg-[#0C1829] text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 lg:py-20">
-        {/* Logo */}
-        <Link href="/" className="inline-block mb-12">
-          <Image
-            src="/logo-nav.png"
-            alt="Fuller Horizons"
-            width={140}
-            height={94}
-            className="h-12 w-auto"
-          />
+        {/* Responsive Logo */}
+        <Link href="/" className="inline-block mb-12" aria-label="Fuller Horizons - Home">
+          {/* Mobile: Monogram */}
+          <div className="md:hidden">
+            <Image
+              src="/images/logos/FH_monogram_white.png"
+              alt="Fuller Horizons Logo"
+              width={48}
+              height={48}
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+          {/* Tablet and up: Stacked logo */}
+          <div className="hidden md:block">
+            <Image
+              src="/images/logos/FH_nav_stacked_h80.png"
+              alt="Fuller Horizons Logo"
+              width={240}
+              height={80}
+              className="h-12 w-auto object-contain"
+            />
+          </div>
         </Link>
 
         {/* Three Column Layout */}

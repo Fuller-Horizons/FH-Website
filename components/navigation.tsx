@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
@@ -113,15 +114,43 @@ export function Navigation() {
         style={{ paddingTop: headerPadding, paddingBottom: headerPadding }}
       >
         <div className="flex items-center justify-between">
-          {/* Wordmark */}
+          {/* Responsive Logo */}
           <motion.div style={{ scale: logoScale }}>
-            <Link href="/" className="block">
-              <span
-                className="text-[22px] lg:text-[26px] font-medium text-white/[0.93] tracking-[0.04em]"
-                style={{ fontFamily: "var(--font-playfair-display)" }}
-              >
-                Fuller Horizons
-              </span>
+            <Link href="/" className="block" aria-label="Fuller Horizons - Home">
+              {/* Mobile: Monogram only (< 768px) */}
+              <div className="relative md:hidden" style={{ width: "30px", height: "30px" }}>
+                <Image
+                  src="/images/logos/FH_monogram_white.png"
+                  alt="Fuller Horizons Logo"
+                  width={60}
+                  height={60}
+                  className="object-contain"
+                  style={{ width: "30px", height: "30px" }}
+                  priority
+                />
+              </div>
+              {/* Tablet: Stacked h40 (768px - 1279px) */}
+              <div className="relative hidden md:block xl:hidden" style={{ width: "auto", height: "38px" }}>
+                <Image
+                  src="/images/logos/FH_nav_stacked_h40.png"
+                  alt="Fuller Horizons Logo"
+                  width={160}
+                  height={40}
+                  className="object-contain h-[38px] w-auto"
+                  priority
+                />
+              </div>
+              {/* Desktop: Stacked h80 (>= 1280px) */}
+              <div className="relative hidden xl:block" style={{ width: "auto", height: "46px" }}>
+                <Image
+                  src="/images/logos/FH_nav_stacked_h80.png"
+                  alt="Fuller Horizons Logo"
+                  width={240}
+                  height={80}
+                  className="object-contain h-[46px] w-auto"
+                  priority
+                />
+              </div>
             </Link>
           </motion.div>
 
