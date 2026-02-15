@@ -1,6 +1,6 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { DM_Sans, Playfair_Display } from 'next/font/google'
+import { DM_Sans, Playfair_Display, Cormorant_Garamond } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -13,6 +13,12 @@ const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ['400', '500', '600', '700'],
   variable: '--font-playfair-display'
+});
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-cormorant-garamond'
 });
 
 export const metadata: Metadata = {
@@ -51,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${playfairDisplay.variable} font-sans antialiased bg-background text-foreground`}>
+        <body className={`${dmSans.variable} ${playfairDisplay.variable} ${cormorantGaramond.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
         <Analytics />
       </body>
