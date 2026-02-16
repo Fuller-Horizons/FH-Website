@@ -6,8 +6,8 @@ const footerLinks = [
   { href: "/the-fuller-approach", label: "The Fuller Approach" },
   { href: "/services", label: "Services" },
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/insights", label: "Insights" },
-  { href: "/blog", label: "Blog" },
+  { href: "/insights", label: "Briefings" },
+  { href: "/perspectives", label: "Perspectives" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ]

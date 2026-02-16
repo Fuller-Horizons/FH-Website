@@ -15,10 +15,10 @@ const navGroups = [
     ],
   },
   {
-    label: "Thinking",
+    label: "Insights",
     items: [
-      { href: "/insights", label: "Insights" },
-      { href: "/blog", label: "Blog" },
+      { href: "/insights", label: "Briefings" },
+      { href: "/perspectives", label: "Perspectives" },
     ],
   },
   { label: "About", href: "/about" },
@@ -30,8 +30,8 @@ const allLinks = [
   { href: "/the-fuller-approach", label: "The Fuller Approach" },
   { href: "/services", label: "Services" },
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/insights", label: "Insights" },
-  { href: "/blog", label: "Blog" },
+  { href: "/insights", label: "Briefings" },
+  { href: "/perspectives", label: "Perspectives" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ]
@@ -54,6 +54,8 @@ function NavDropdown({ label, items }: { label: string; items: { href: string; l
         onClick={() => setOpen(!open)}
         onMouseEnter={() => setOpen(true)}
         className="flex items-center gap-1 text-[14px] font-normal text-white/80 transition-all duration-300 hover:text-white"
+        aria-label={`${label} menu`}
+        aria-expanded={open}
       >
         {label}
         <ChevronDown className={`h-3 w-3 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />

@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { ResourceCard } from "@/components/insights/resource-card"
 
 export const metadata: Metadata = {
-  title: "Insights & Executive Resources | Fuller Horizons",
+  title: "Briefings & Executive Resources | Fuller Horizons",
   description:
     "Executive briefings, governance frameworks, and advisory papers for leaders navigating risk and growth.",
 }
