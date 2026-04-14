@@ -177,7 +177,7 @@ export default function TheFullerApproachPage() {
             </p>
             <blockquote>
               <p className="text-2xl lg:text-3xl text-[#D4AF37] italic leading-relaxed" style={{ fontFamily: "var(--font-display)" }}>
-                "Discipline at the beginning prevents regret at the end."
+                &ldquo;Discipline at the beginning prevents regret at the end.&rdquo;
               </p>
             </blockquote>
           </div>

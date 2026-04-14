@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "assess:http": "node scripts/assess-http.mjs",
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
+    "lighthouse": "lighthouse",
     "start": "next start"
   },
   "dependencies": {
@@ -45,6 +47,7 @@
     "cmdk": "latest",
     "date-fns": "4.1.0",
     "embla-carousel-react": "latest",
+    "framer-motion": "^11.15.0",
     "gray-matter": "^4.0.3",
     "input-otp": "latest",
     "lucide-react": "^0.454.0",
@@ -58,7 +61,6 @@
     "react-hook-form": "latest",
     "react-resizable-panels": "latest",
     "recharts": "latest",
-    "framer-motion": "^11.15.0",
     "resend": "latest",
     "sonner": "latest",
     "tailwind-merge": "^2.5.5",
@@ -71,6 +73,9 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.3",
+    "lighthouse": "^13.1.0",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",

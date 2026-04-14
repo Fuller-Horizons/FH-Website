@@ -1,0 +1,52 @@
+---
+description: Full-site assessment checklist for Next.js — lint, build, routes, security, a11y, perf, runtime flows, Lighthouse
+alwaysApply: true
+---
+
+# Site assessment (FH-Website)
+
+When asked to **assess the site** or run a **full audit**, follow this order and report evidence (command output, file paths, scores).
+
+## 1. Static / build
+
+- Run `npm run lint` — list every ESLint error and warning with paths. (Next.js 16 has no `next lint` CLI; this project uses ESLint + `eslint-config-next` in `eslint.config.mjs` at the repo root.)
+- Run `npm run build` — list every failure; note warnings that affect production (for example `metadataBase` for OG images).
+
+## 2. Routes and data
+
+- Inventory `app/` routes: layouts, `page.tsx`, route groups, `route.ts` / API handlers.
+- Note `middleware.ts`, `next.config.*`, and env usage (`process.env`, `.env*`).
+
+## 3. Security
+
+- Forms and server actions: validation (e.g. Zod), error handling, no trust of raw client input.
+- API routes: method checks, auth if needed, no secret leakage in responses or client bundles.
+- Search for risky patterns: `dangerouslySetInnerHTML`, raw SQL if any, eval.
+
+## 4. Accessibility and UX (code review)
+
+- Interactive controls: labels, `aria-*`, focus order, keyboard use.
+- Images: `alt` text; prefer `next/image` where appropriate.
+- Heading hierarchy and landmark structure on main templates.
+
+## 5. Performance (code review)
+
+- Client vs server components; avoid unnecessary `"use client"` boundaries.
+- Large imports, dynamic imports where they help, image optimization.
+
+## 6. Runtime verification (needs a URL)
+
+- With the server running (`npm run dev` or `npm run start` after `npm run build`), run **`npm run assess:http`** (defaults to `http://127.0.0.1:3000`) or `ASSESS_BASE_URL=https://… npm run assess:http` for production.
+- Manually smoke-test primary navigation, forms, and theme/responsive behavior at a narrow viewport when a browser-capable agent is available.
+- Note console errors, failed network requests, and obvious layout breaks.
+
+## 7. Lighthouse (optional, needs a reachable URL)
+
+- With the site reachable at that URL, run for example:
+  - `npm run lighthouse -- <full-url> --only-categories=performance,accessibility,best-practices,seo --chrome-flags="--headless=new" --output=json --output-path=lighthouse-report.json --quiet`
+  - Or open the HTML report: add `--output=html --output-path=lighthouse-report.html` and inspect in a browser.
+- Summarize category scores and top actionable findings; turn into a short fix list.
+
+## Reusable Agent prompt
+
+> Assess this Next.js app: run `npm run lint` and `npm run build`; summarize failures. Inventory `app/` routes and layouts. Review forms, API routes, and env handling for security. Scan main UI for a11y (headings, labels, focus). List top performance improvements. If a base URL is available, note runtime issues at desktop and mobile widths. If Lighthouse was run, prioritize fixes from its report.
