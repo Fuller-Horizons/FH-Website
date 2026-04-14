@@ -40,9 +40,9 @@ export function HeroSection() {
             letterSpacing: "-0.01em",
           }}
         >
-          Decisions That Hold Up
+          Alignment Before
           <br className="hidden sm:block" />
-          {" "}Under Pressure.
+          {" "}Investment.
         </h1>
 
         {/* Gold divider */}
@@ -66,8 +66,9 @@ export function HeroSection() {
             letterSpacing: "0.01em",
           }}
         >
-          Independent strategic advisory for leaders who require governance
-          clarity, vendor accountability, and defensible decision-making.
+          Fuller Horizons ensures business, technology, and execution partners
+          are aligned before capital is deployed — preventing the costly mistakes
+          that derail projects after money is committed.
         </p>
 
         {/* CTAs */}

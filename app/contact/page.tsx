@@ -23,7 +23,7 @@ export default function ContactPage() {
               Contact
             </h1>
             <p className="mt-8 text-lg text-[#4B5563] leading-relaxed text-center">
-              If something feels misaligned, risk is increasing, or clarity is missing, a confidential conversation can be requested below.
+              If a project, vendor selection, or major investment is ahead — and you want misalignment surfaced before money is committed — a confidential conversation can be requested below.
             </p>
           </div>
         </section>

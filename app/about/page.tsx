@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "About | Fuller Horizons",
   description:
-    "Empowering leaders to make smarter, defensible decisions about their technology, vendors, and digital infrastructure.",
+    "Fuller Horizons ensures business, technology, and execution partners are aligned before capital is deployed — preventing the failures that derail projects after money is committed.",
 }
 
 export default function AboutPage() {
@@ -27,7 +27,7 @@ export default function AboutPage() {
         <section className="bg-[#F3F2EF] py-16 lg:py-20">
           <div className="mx-auto max-w-2xl px-6 lg:px-8 text-center">
             <p className="text-xl lg:text-2xl font-semibold text-[#0A1628] leading-tight text-balance">
-              Empowering leaders to make smarter, defensible decisions about their technology, vendors, and digital infrastructure.
+              Ensuring business, technology, and execution partners are aligned before capital is deployed — preventing the costly mistakes that derail projects after money is committed.
             </p>
             <div className="mt-10 flex justify-center">
               <div className="w-16 h-0.5 bg-[#D4AF37]/40" />
@@ -61,19 +61,19 @@ export default function AboutPage() {
 
                 <div className="mt-6 space-y-5">
                   <p className="text-lg text-[#4B5563] leading-relaxed">
-                    My career spans more than 25 years supporting organizations where technology alignment, vendor accountability, and leadership clarity are essential.
+                    My career spans more than 25 years across the operating environments where projects either deliver or quietly fall apart — from hands-on technology leadership into senior executive responsibility, working alongside owners and C-level leaders on the decisions that determine what actually gets built.
                   </p>
                   <p className="text-lg text-[#4B5563] leading-relaxed">
-                    It began in hands-on IT leadership and progressed into senior, executive-level responsibility, shaping a deep understanding of technology vendor ecosystems and how systems, vendors, and people interact in complex operating environments. Throughout this career, I have worked closely with C-level executives and business owners on critical technology decisions, contributing perspective in moments where the goal is not simply to decide—but to ensure those decisions enable people and organizations to succeed.
+                    What I learned, repeatedly, is that the projects that fail rarely fail from lack of capability. They fail from misalignment — undefined scope, unspoken assumptions, mismatched expectations between client and vendor, unclear ownership. The capability is usually there. The alignment is not.
                   </p>
                   <p className="text-lg text-[#4B5563] leading-relaxed">
-                    Over time, this experience evolved toward helping senior leaders navigate technology complexity, assess vendor risk, and make confident technology decisions, particularly in environments where accountability, trust, and long-term outcomes matter as much as immediate results.
+                    Fuller Horizons exists to fix that before the money is spent. The work combines technical understanding, business strategy, and the human alignment side — stakeholder psychology, decision rights, expectation setting — into a single role that sits between the business and the people delivering the work.
                   </p>
                   <p className="text-lg text-[#4B5563] leading-relaxed">
-                    Through Fuller Horizons, I provide independent strategic advisory to organizations seeking clarity, alignment, and forward progress in their technology decisions. This perspective reflects an appreciation for the realities executives and owners face—competing priorities, imperfect information, and the responsibility that comes with leadership.
+                    The firm does not implement, resell, or hold administrative credentials. That separation is what makes the alignment role independent — and what makes it worth paying for before the first vendor invoice lands.
                   </p>
                   <p className="text-lg text-[#4B5563] leading-relaxed font-medium">
-                    At its core, Fuller Horizons exists to <span className="text-[#D4AF37]">Empower Success</span>—helping leaders create the conditions for their technology, vendors, and people to work together effectively and endure over time.
+                    The core principle is simple: <span className="text-[#D4AF37]">alignment before execution determines outcome.</span>
                   </p>
                 </div>
               </div>

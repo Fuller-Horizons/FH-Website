@@ -6,127 +6,105 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Services | Fuller Horizons",
   description:
-    "Structured advisory engagements that deliver governance clarity, vendor accountability, and defensible technology decisions.",
+    "Alignment Audits, Alignment Architecture, and Alignment Enforcement — structured engagements that prevent costly project failure before execution begins.",
 }
 
 const engagements = [
   {
-    id: "alignment-review",
-    title: "Technology Alignment Review",
+    id: "alignment-audit",
+    title: "Alignment Audit",
+    tag: "Entry Engagement",
     purpose:
-      "Establish executive-level clarity on how your current technology, vendors, and infrastructure align with your business objectives.",
+      "Identify the misalignment risks, scope gaps, and execution exposure that will cause a project to fail or overrun — before money is committed.",
     scope: [
-      "Non-invasive review of current IT provider alignment",
-      "Vendor cost vs. business value analysis",
-      "Software and operational tool assessment",
-      "Internet, VoIP, and infrastructure dependency mapping",
-      "Business workflow vs. technology support evaluation",
+      "Defined business objective (what the project must produce)",
+      "Stakeholder, decision-rights, and ownership review",
+      "Scope, assumption, and dependency surfacing",
+      "Budget and timeline risk assessment",
+      "Vendor or solution alignment review (if applicable)",
+      "Recommended execution structure",
     ],
     deliverables: [
-      "Executive Alignment Report (Branded)",
-      "Vendor Clarity Map",
-      "Cost vs. Value Analysis",
-      "Strategic Priority Recommendations",
-      "Plain-English Executive Summary",
+      "Misalignment Risk Register (ranked)",
+      "Scope Gap Analysis",
+      "Budget & Timeline Risk Brief",
+      "Vendor / Solution Assessment",
+      "Recommended Execution Structure",
     ],
     idealFor:
-      "Organizations with growing vendor complexity who need an independent, structured view of how technology is serving the business.",
-    investment: "$2,500 - $5,000",
+      "Owners and operators preparing to spend on a project, vendor engagement, or transformation — and who want the failure modes surfaced before contracts are signed.",
   },
   {
-    id: "risk-vendor-review",
-    title: "Operational Risk & Vendor Review",
+    id: "alignment-architecture",
+    title: "Alignment Architecture",
+    tag: "Core Offer",
     purpose:
-      "Identify and document technology risks, vendor misalignment, and operational dependencies that leadership needs to understand.",
+      "Fully define and structure the project so it can be executed without ambiguity — scope, stakeholders, decisions, and roadmap committed in writing.",
     scope: [
-      "IT vendor scope and alignment assessment",
-      "Software ecosystem risk analysis (CRM, ERP, SaaS)",
-      "Vendor overlap and redundancy identification",
-      "Business continuity and resilience posture review",
-      "Technology dependency risk mapping",
-      "Contract and service structure evaluation (non-legal)",
+      "Scope definition and boundary setting",
+      "Stakeholder alignment and role assignment",
+      "Clear expectations and responsibilities",
+      "Execution roadmap with sequencing and dependencies",
+      "Decision framework for in-flight tradeoffs",
     ],
     deliverables: [
-      "Vendor Risk Scorecard",
-      "Technology Risk Register (Business Impact Ranked)",
-      "Vendor Accountability Matrix",
-      "Executive Risk Briefing Deck",
-      "Strategic Action Roadmap (Advisory Only)",
+      "Defined Project Scope Document",
+      "Stakeholder & Decision-Rights Map",
+      "Execution Roadmap",
+      "In-Flight Decision Framework",
+      "Vendor / Partner Engagement Brief",
     ],
     idealFor:
-      "Leadership teams concerned about continuity, vendor accountability, or preparing for growth and investment.",
-    investment: "$7,500 - $15,000",
+      "Organizations whose audit surfaced enough complexity that the project needs to be structured end-to-end before any vendor begins billable work.",
   },
   {
-    id: "strategic-advisory",
-    title: "Strategic Technology Advisory",
+    id: "alignment-enforcement",
+    title: "Alignment Enforcement",
+    tag: "Optional / High Value",
     purpose:
-      "Provide ongoing, vendor-neutral strategic guidance that aligns technology decisions with long-term business direction.",
+      "Maintain alignment during execution — facilitate decisions, protect scope, and keep stakeholders moving in the same direction as conditions change.",
     scope: [
-      "Technology strategy alignment with business goals",
-      "Vendor ecosystem oversight (MSP, VoIP, ISP, Software)",
-      "Budget and ROI optimization guidance",
-      "Governance and decision framework development",
-      "Executive-level technology planning",
-      "Leadership advisory sessions",
+      "Meeting facilitation and decision capture",
+      "Scope protection and change control",
+      "Stakeholder alignment maintenance",
+      "Vendor accountability and conflict mediation",
+      "Executive briefing and escalation",
     ],
     deliverables: [
-      "12-36 Month Technology Roadmap",
-      "Strategic Vendor Architecture Plan",
-      "Governance Framework",
-      "Executive Decision Support Reports",
-      "Ongoing Strategic Guidance",
+      "Decision Log",
+      "Scope Change Control Record",
+      "Stakeholder Alignment Updates",
+      "Executive Briefings",
     ],
     idealFor:
-      "Growing organizations that need a trusted, independent advisor functioning in a fractional strategic role -- without implementation conflicts or vendor bias.",
-    investment: null,
+      "Projects where the cost of drift is high — long timelines, multiple vendors, or executive sponsors who need an independent party holding the line.",
   },
   {
-    id: "vendor-selection",
-    title: "Vendor Selection & RFP Advisory",
+    id: "project-participation",
+    title: "Project Participation",
+    tag: "Selective — % of Project Value",
     purpose:
-      "Structure a defensible vendor selection process built on your business requirements -- not vendor pitches or referral incentives.",
+      "Ongoing alignment ownership through delivery on a select set of large, well-scoped projects with trusted partners — compensated as a percentage of project value.",
     scope: [
-      "Custom RFP development and distribution",
-      "Vendor vetting and due diligence",
-      "Proposal evaluation and comparison",
-      "Total cost of ownership analysis",
-      "Executive recommendation briefing",
+      "Limited to engagements that have completed prior alignment phases",
+      "Defined scope, defined partners, and a defined outcome",
+      "Reserved for large projects where alignment is the deciding factor",
     ],
     deliverables: [
-      "Custom RFP Document",
-      "Vendor Comparison Matrix",
-      "Total Cost of Ownership Analysis",
-      "Vendor Vetting & Due Diligence Summary",
-      "Executive Recommendation Brief",
+      "Continuous alignment ownership through execution",
+      "Partner and stakeholder coordination",
+      "Outcome accountability",
     ],
     idealFor:
-      "Organizations selecting a new technology vendor (MSP, VoIP, ISP, cybersecurity, software) who need an independent process free from vendor influence.",
-    investment: null,
+      "Large, well-defined initiatives where Fuller Horizons has already led the audit and architecture phases and the partners involved are trusted and known.",
   },
-  {
-    id: "quarterly-oversight",
-    title: "Quarterly Vendor Oversight",
-    purpose:
-      "Maintain independent, ongoing oversight to ensure vendors and technology investments remain aligned with business objectives.",
-    scope: [
-      "Vendor performance evaluation",
-      "Cost and budget drift review",
-      "Risk posture reassessment",
-      "Strategic alignment verification",
-      "Executive briefing session",
-      "Priority recommendation updates",
-    ],
-    deliverables: [
-      "Quarterly Governance Report",
-      "Vendor Performance Scorecard",
-      "Strategic Alignment Summary",
-      "Executive Advisory Briefing",
-    ],
-    idealFor:
-      "Organizations that want continuous, independent governance over their vendor ecosystem and technology direction.",
-    investment: null,
-  },
+]
+
+const principles = [
+  "Alignment Before Investment",
+  "Independence by Design",
+  "Defined Scope, Defined Outcome",
+  "No Implementation, No Resale",
 ]
 
 export default function ServicesPage() {
@@ -141,13 +119,13 @@ export default function ServicesPage() {
               className="text-[40px] lg:text-[56px] font-medium text-[#0A1628] text-balance leading-tight"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Structured Advisory Engagements.
+              Alignment Engagements.
             </h1>
             <div className="mx-auto mt-8 h-px w-16 bg-[#C4A87A]" />
             <p className="mt-8 text-lg text-[#4B5563] leading-relaxed max-w-2xl mx-auto font-sans">
-              Each engagement is fixed in scope, independent by design, and
-              structured to produce executive-ready deliverables. No vendor
-              bias. No implementation conflicts. No ongoing dependencies.
+              Three sequenced engagements — Audit, Architecture, and Enforcement —
+              that ensure business, technology, and execution partners are aligned
+              before capital is deployed and stay aligned through delivery.
             </p>
           </div>
         </section>
@@ -165,12 +143,17 @@ export default function ServicesPage() {
                   {/* Gold accent line */}
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C4A87A]" />
 
-                  <h2
-                    className="text-2xl lg:text-[28px] font-normal text-[#0A1628] leading-snug"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {engagement.title}
-                  </h2>
+                  <div className="flex items-baseline justify-between flex-wrap gap-3">
+                    <h2
+                      className="text-2xl lg:text-[28px] font-normal text-[#0A1628] leading-snug"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {engagement.title}
+                    </h2>
+                    <p className="text-xs font-semibold text-[#A89060] tracking-wide uppercase">
+                      {engagement.tag}
+                    </p>
+                  </div>
 
                   <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                     {/* Left Column */}
@@ -203,7 +186,7 @@ export default function ServicesPage() {
                     <div className="space-y-6">
                       <div>
                         <h3 className="text-xs font-semibold text-[#A89060]">
-                          Executive Deliverables Produced
+                          Deliverables Produced
                         </h3>
                         <ul className="mt-3 space-y-2 text-[#4B5563] leading-relaxed font-sans">
                           {engagement.deliverables.map((item, i) => (
@@ -226,17 +209,11 @@ export default function ServicesPage() {
                     </div>
                   </div>
 
-                  {/* Footer: Investment or Contact */}
+                  {/* Footer */}
                   <div className="mt-8 border-t border-[#E8E6E3] pt-6 flex items-center justify-between">
-                    {engagement.investment ? (
-                      <p className="text-[#0A1628] font-medium font-sans">
-                        Investment: {engagement.investment}
-                      </p>
-                    ) : (
-                      <p className="text-[#4B5563] text-sm font-sans italic">
-                        Scoped to engagement complexity.
-                      </p>
-                    )}
+                    <p className="text-[#4B5563] text-sm font-sans italic">
+                      Fixed-fee engagement. Scope and timeline confirmed before start.
+                    </p>
                     <Link
                       href="/contact"
                       className="text-sm font-medium text-[#A89060] underline underline-offset-4 decoration-[#C4A87A]/40 hover:text-[#0A1628] transition-colors font-sans"
@@ -246,42 +223,6 @@ export default function ServicesPage() {
                   </div>
                 </div>
               ))}
-
-              {/* Add-On */}
-              <div className="bg-white rounded-lg p-8 lg:p-10 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C4A87A]" />
-                <div className="flex items-start justify-between flex-wrap gap-4">
-                  <div>
-                    <h2
-                      className="text-2xl lg:text-[28px] font-normal text-[#0A1628] leading-snug"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      Digital & Software Ecosystem Review
-                    </h2>
-                    <p className="mt-2 text-xs font-semibold text-[#A89060]">
-                      Optional Add-On
-                    </p>
-                  </div>
-                </div>
-                <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 text-[#4B5563] leading-relaxed font-sans">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-2 block h-1 w-1 shrink-0 rounded-full bg-[#C4A87A]" />
-                    Website technology posture
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-2 block h-1 w-1 shrink-0 rounded-full bg-[#C4A87A]" />
-                    Critical software vendor alignment
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-2 block h-1 w-1 shrink-0 rounded-full bg-[#C4A87A]" />
-                    SaaS redundancy mapping
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-2 block h-1 w-1 shrink-0 rounded-full bg-[#C4A87A]" />
-                    Digital presence infrastructure alignment
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
@@ -296,12 +237,7 @@ export default function ServicesPage() {
               Every engagement is built on four principles.
             </h2>
             <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                "Independence",
-                "Vendor Neutrality",
-                "Decision Integrity",
-                "Governance Clarity",
-              ].map((principle) => (
+              {principles.map((principle) => (
                 <div key={principle} className="text-center">
                   <div className="mx-auto h-px w-8 bg-[#C4A87A]" />
                   <p className="mt-4 text-sm font-semibold text-[#0A1628] font-sans">
@@ -311,8 +247,9 @@ export default function ServicesPage() {
               ))}
             </div>
             <p className="mt-10 text-[#4B5563] leading-relaxed font-sans">
-              Engagements may be standalone or sequenced depending on what
-              needs to become clear first.
+              Engagements are typically sequenced — Audit first, Architecture next,
+              Enforcement where the cost of drift is high. Each can also stand alone
+              when the situation calls for it.
             </p>
             <Link
               href="/contact"

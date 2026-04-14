@@ -5,11 +5,13 @@ export function CTASection() {
     <section className="bg-[#0C1829] py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
         <h2 className="text-[28px] lg:text-[40px] font-medium text-white mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-          Clarity starts with a conversation.
+          Align before you spend.
         </h2>
 
         <p className="text-lg text-white/80 leading-relaxed mb-10">
-          If you want a clearer picture of how your technology supports your business — or if important decisions are ahead and you want an independent perspective — a confidential conversation is the first step.
+          If a project, vendor selection, or major investment is ahead — and you want
+          the gaps surfaced before money is committed — a confidential conversation is
+          the first step.
         </p>
 
         <Link

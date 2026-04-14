@@ -1,16 +1,19 @@
 export function LeadersSection() {
   const audiences = [
     {
-      title: "Mid-Market Founders",
-      description: "Technology leaders building scalable operations who need strategic advisory without implementation conflicts or vendor lock-in.",
+      title: "Owners & Operators",
+      description:
+        "SMB and lower mid-market leaders engaging external vendors on $15K–$250K+ initiatives who have been burned by past project failures or scope drift.",
     },
     {
-      title: "Private Equity & Portfolio Companies",
-      description: "Investment teams and portfolio executives seeking independent technology assessments and governance frameworks for defensible diligence.",
+      title: "Digital Transformation & Tech Implementation",
+      description:
+        "Companies preparing for a system rollout, vendor transition, or platform migration that need scope, stakeholders, and execution defined before signing.",
     },
     {
-      title: "Regulated Industries",
-      description: "Organizations navigating CMMC, compliance frameworks, and cybersecurity mandates who require vendor-neutral strategic guidance.",
+      title: "Growth & Vendor Transitions",
+      description:
+        "Organizations scaling operations, replacing incumbents, or restructuring vendor relationships where alignment between business intent and delivery is the deciding factor.",
     },
   ]
 
@@ -20,7 +23,7 @@ export function LeadersSection() {
         {/* Main Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-12 lg:mb-16">
           <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] mb-4 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-            Built for Leaders in Complex Environments.
+            Built for Leaders Spending Real Capital on Execution.
           </h2>
           <div className="mx-auto mt-6 h-px w-24 bg-[#A89060]" />
         </div>
@@ -49,7 +52,7 @@ export function LeadersSection() {
           </h3>
           <div className="mx-auto mt-4 h-px w-20 bg-[#A89060] mb-6" />
           <p className="text-lg text-[#4B5563] leading-relaxed">
-            Fuller Horizons is based on Long Island, serving clients across Nassau County, Suffolk County, and the greater New York metropolitan area. Remote advisory engagements are available for qualified organizations nationwide.
+            Fuller Horizons is based on Long Island, working with clients across Nassau County, Suffolk County, and the greater New York metropolitan area. Remote alignment engagements are available for qualified organizations nationwide.
           </p>
         </div>
       </div>

@@ -6,43 +6,52 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Why Fuller Horizons | Fuller Horizons",
   description:
-    "Not an MSP. Not a Consultant. A Strategic Technology Advisor. Learn how Fuller Horizons provides independent, vendor-neutral technology advisory.",
+    "Not a generic consultant. Not a technical implementer. Not a project manager. Fuller Horizons is the alignment authority that prevents costly project failure before execution.",
 }
 
 const differentiators = [
   {
-    title: "Not an MSP \u2014 a strategic partner to your MSP",
+    title: "Not a generic consultant",
     description:
-      "Your MSP handles day-to-day IT operations. I provide the independent strategic perspective that helps ensure those operations stay aligned with your business goals. I work alongside your IT provider, not in place of them.",
+      "Consultants sell deliverables, frameworks, and billable hours. Fuller Horizons sells one specific outcome — alignment — and is held to it.",
   },
   {
-    title: "Not IT support \u2014 executive-level advisory",
+    title: "Not a technical implementer",
     description:
-      "Your IT team or provider handles the technical work. I help leadership ensure that technology decisions, vendor relationships, and infrastructure investments support the bigger picture.",
+      "Implementation stays with your vendors and partners. That separation is what makes the alignment role independent and worth paying for.",
   },
   {
-    title: "Not a vendor \u2014 an independent advisor",
+    title: "Not a project manager",
     description:
-      "I don\u2019t sell hardware, software, or telecom services. I don\u2019t accept commissions or referral fees. My only obligation is to help your business make stronger, more informed technology decisions.",
+      "Project managers execute a plan. Fuller Horizons makes sure the plan is the right plan, and that the people, scope, and decisions behind it actually hold up.",
   },
 ]
 
 const capabilities = [
   {
-    heading: "Strategic Technology Advisor",
+    heading: "Pre-Execution Alignment Authority",
     description:
-      "Executive-level technology guidance rooted in your business goals, not vendor quotas.",
+      "Engaged before capital is committed. Surfaces the misalignment that would otherwise cost you mid-project.",
   },
   {
-    heading: "Vendor-Neutral Orchestrator",
+    heading: "Decision Structure Architect",
     description:
-      "Coordinating and evaluating your vendor ecosystem \u2014 MSP, VoIP, ISP, copier, software \u2014 without conflicts of interest.",
+      "Defines scope, decision rights, and ownership so vendors and stakeholders know what they are actually building toward.",
   },
   {
-    heading: "Executive Decision Support",
+    heading: "Risk Eliminator",
     description:
-      "Translating complex technology decisions into clear, defensible business choices.",
+      "Combines technical understanding, business strategy, and stakeholder psychology to prevent failure where projects usually break.",
   },
+]
+
+const failurePatterns = [
+  "Undefined or shifting scope",
+  "Misaligned expectations between client and vendor",
+  "Budget overruns from hidden assumptions",
+  "Poor translation between business goals and technical execution",
+  "Vendor conflict and blame shifting",
+  "Decision paralysis from unclear ownership",
 ]
 
 export default function WhyFullerHorizonsPage() {
@@ -57,14 +66,42 @@ export default function WhyFullerHorizonsPage() {
               Why Fuller Horizons
             </h1>
             <p className="mt-8 text-lg text-[#4B5563] leading-relaxed">
-              Not an MSP. Not a Consultant. A Strategic Technology Advisor.
+              Pre-execution alignment authority across business, technology, and
+              execution partners — so the project you fund actually delivers the
+              result you funded it for.
             </p>
           </div>
         </section>
 
-        {/* How We're Different Section */}
+        {/* Failure Patterns Section */}
         <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-4 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
+              How Projects Actually Fail
+            </h2>
+            <p className="text-base text-[#4B5563] leading-relaxed text-center max-w-2xl mx-auto mb-12">
+              Rarely from lack of capability. Almost always from misalignment that
+              compounds quietly until the budget is gone.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {failurePatterns.map((item) => (
+                <div
+                  key={item}
+                  className="bg-white border-l-[3px] border-[#D4AF37] p-6"
+                >
+                  <p className="text-[#0A1628] font-medium leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* What FH Is Not Section */}
+        <section className="bg-[#F9F8F6] py-16 lg:py-24">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
+              What Fuller Horizons Is Not
+            </h2>
             <div className="space-y-6">
               {differentiators.map((item) => (
                 <div
@@ -83,9 +120,12 @@ export default function WhyFullerHorizonsPage() {
           </div>
         </section>
 
-        {/* What Fuller Horizons Brings Section */}
-        <section className="bg-[#F9F8F6] py-16 lg:py-24">
+        {/* What Fuller Horizons Brings */}
+        <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
+              What Fuller Horizons Brings
+            </h2>
             <div className="grid gap-8 lg:grid-cols-3">
               {capabilities.map((item) => (
                 <div key={item.heading} className="text-center">
@@ -101,20 +141,13 @@ export default function WhyFullerHorizonsPage() {
           </div>
         </section>
 
-        {/* Market Context Section */}
-        <section className="bg-[#0C1829] py-16 lg:py-24">
-          <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-            <p className="text-lg text-white leading-relaxed">
-              Long Island has a strong ecosystem of IT service providers. Fuller Horizons exists to help business owners navigate that ecosystem with clarity — ensuring that every technology relationship, investment, and decision supports the business it was meant to serve.
-            </p>
-          </div>
-        </section>
-
         {/* Independence Section */}
         <section className="bg-[#F9F8F6] py-16 lg:py-20">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <p className="text-lg text-[#4B5563] leading-relaxed">
-              Fuller Horizons operates as an independent advisory firm. I do not manage IT systems, hold administrative credentials, implement technical changes, or resell vendor services. When technical discovery is needed, it is performed by client-approved specialists.
+              Fuller Horizons does not implement, hold administrative credentials, or
+              resell vendor services. The alignment role only stays trustworthy if
+              the incentives stay clean.
             </p>
           </div>
         </section>
@@ -123,10 +156,10 @@ export default function WhyFullerHorizonsPage() {
         <section className="bg-[#0C1829] py-16 lg:py-24">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <h2 className="text-[28px] lg:text-[40px] font-medium text-white mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-              Ready for an independent perspective?
+              Align before you spend.
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-10">
-              A confidential conversation is the first step toward strategic clarity.
+              A confidential conversation is the first step toward alignment.
             </p>
             <Link
               href="/contact"

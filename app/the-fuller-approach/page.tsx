@@ -6,60 +6,63 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "The Fuller Approach | Fuller Horizons",
   description:
-    "Strategic technology advisory that helps business leaders navigate vendor relationships, technology decisions, and IT alignment — without conflicts of interest.",
+    "Alignment before investment. The Fuller Approach defines, structures, and protects the work before money is committed — across business, technology, and execution partners.",
 }
 
 const steps = [
   {
     number: "01",
-    title: "Clarify intent and alignment",
-    description: "Define what your technology should be doing for your business — and identify where it falls short.",
+    title: "Surface the misalignment",
+    description:
+      "Identify the assumptions, scope gaps, and ownership ambiguity that will cause this project to fail or overrun.",
   },
   {
     number: "02",
-    title: "Surface risk and opportunity",
-    description: "Bring vendor alignment, cost exposure, and operational risks into clear view.",
+    title: "Structure the engagement",
+    description:
+      "Define the objective, scope, decision rights, and execution roadmap so the work can be delivered without ambiguity.",
   },
   {
     number: "03",
-    title: "Define measurable outcomes",
-    description: "Translate strategy into observable results, decision paths, and governance frameworks.",
+    title: "Hold the line through delivery",
+    description:
+      "Where the cost of drift is high, stay engaged to facilitate decisions, protect scope, and keep stakeholders aligned.",
   },
 ]
 
 const differentiators = [
   {
-    title: "Not an MSP — a strategic partner to your MSP",
+    title: "Not a generic consultant",
     description:
-      "Your MSP handles day-to-day IT operations. I provide the independent strategic perspective that helps ensure those operations stay aligned with your business goals. I work alongside your IT provider, not in place of them.",
+      "Generic consultants sell deliverables and billable hours. Fuller Horizons sells alignment — a specific, narrow outcome that prevents the failure modes you would otherwise pay to fix later.",
   },
   {
-    title: "Not IT support — executive-level advisory",
+    title: "Not a technical implementer",
     description:
-      "Your IT team or provider handles the technical work. I help leadership ensure that technology decisions, vendor relationships, and infrastructure investments support the bigger picture.",
+      "Implementation stays with your vendors and partners. Fuller Horizons does not write the code, configure the systems, or deliver the work — which is what makes the alignment role independent and trustworthy.",
   },
   {
-    title: "Not a vendor — an independent advisor",
+    title: "Not a project manager",
     description:
-      "I don't sell hardware, software, or telecom services. I don't accept commissions or referral fees. My only obligation is to help your business make stronger, more informed technology decisions.",
+      "PMs run a defined plan. Fuller Horizons makes sure the plan is the right plan before it gets handed off — and, when retained, holds it together as conditions change.",
   },
 ]
 
 const capabilities = [
   {
-    heading: "Strategic Technology Advisor",
+    heading: "Alignment Authority",
     description:
-      "Executive-level technology guidance rooted in your business goals, not vendor quotas.",
+      "Pre-execution authority that ensures business, technology, and execution partners are aligned before capital is deployed.",
   },
   {
-    heading: "Vendor-Neutral Orchestrator",
+    heading: "Decision Architect",
     description:
-      "Coordinating and evaluating your vendor ecosystem — MSP, VoIP, ISP, copier, software — without conflicts of interest.",
+      "Structures scope, decision rights, and ownership so the work can be executed without ambiguity once it begins.",
   },
   {
-    heading: "Executive Decision Support",
+    heading: "Risk Eliminator",
     description:
-      "Translating complex technology decisions into clear, defensible business choices.",
+      "Surfaces the misalignment, assumption, and scope risks that quietly compound into budget overruns and project failure.",
   },
 ]
 
@@ -75,15 +78,18 @@ export default function TheFullerApproachPage() {
               The Fuller Approach
             </h1>
             <p className="mt-6 text-xl text-[#D4AF37] font-medium text-center">
-              Not an MSP. Not a Consultant. A Strategic Technology Advisor.
+              Alignment before investment determines outcome.
             </p>
             <p className="mt-6 text-lg text-[#4B5563] leading-relaxed text-center">
-              Great technology providers deserve a strategic partner who helps connect their work to your business goals. Fuller Horizons provides the independent perspective that strengthens alignment between leadership, vendors, and IT — so everyone moves forward together.
+              Most projects fail not from lack of capability, but from misalignment —
+              shifting scope, mismatched expectations, hidden assumptions, unclear
+              ownership. Fuller Horizons fixes that before money is committed, and
+              when needed, holds it together through delivery.
             </p>
           </div>
         </section>
 
-        {/* What Fuller Horizons Is Section */}
+        {/* What Fuller Horizons Brings */}
         <section className="bg-[#F3F2EF] py-16 lg:py-20">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
             <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
@@ -104,7 +110,7 @@ export default function TheFullerApproachPage() {
           </div>
         </section>
 
-        {/* How We're Different Section */}
+        {/* What Fuller Horizons Is Not */}
         <section className="bg-[#F9F8F6] py-16 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
@@ -132,7 +138,7 @@ export default function TheFullerApproachPage() {
         <section className="bg-[#F3F2EF] py-16 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-              How We Work Together
+              How an Engagement Moves
             </h2>
             <div className="space-y-8">
               {steps.map((step) => (
@@ -161,10 +167,15 @@ export default function TheFullerApproachPage() {
               The Scope of My Role
             </h2>
             <p className="text-lg text-[#4B5563] leading-relaxed mb-6">
-              My role is clarity, alignment, and accountability to defined outcomes. Think of me as an independent strategic partner — working alongside your vendors and IT team to ensure technology serves the business.
+              My role is alignment, structure, and decision integrity — the work that
+              determines whether a project succeeds before anyone touches a tool.
+              I sit between the business and the people executing the work, and I am
+              accountable to the outcome, not to any vendor.
             </p>
             <p className="text-base text-[#4B5563] leading-relaxed">
-              Fuller Horizons operates as an independent advisory firm. I do not manage IT systems, hold administrative credentials, implement technical changes, or resell vendor services. When technical discovery is needed, it is performed by client-approved specialists.
+              Fuller Horizons does not implement, hold administrative credentials, or
+              resell vendor services. When deeper technical or operational discovery is
+              needed, it is performed by client-approved specialists.
             </p>
           </div>
         </section>
@@ -173,11 +184,13 @@ export default function TheFullerApproachPage() {
         <section className="bg-[#0C1829] py-16 lg:py-24">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <p className="text-lg text-white leading-relaxed mb-8">
-              Long Island has a strong ecosystem of IT service providers. Fuller Horizons exists to help business owners navigate that ecosystem with clarity — ensuring that every technology relationship, investment, and decision supports the business it was meant to serve.
+              Most organizations engage vendors too early, spend before clarity, and
+              discover the problems after the money is committed. Fuller Horizons
+              exists to invert that order.
             </p>
             <blockquote>
               <p className="text-2xl lg:text-3xl text-[#D4AF37] italic leading-relaxed" style={{ fontFamily: "var(--font-display)" }}>
-                &ldquo;Discipline at the beginning prevents regret at the end.&rdquo;
+                &ldquo;Alignment before execution determines outcome.&rdquo;
               </p>
             </blockquote>
           </div>
@@ -187,10 +200,10 @@ export default function TheFullerApproachPage() {
         <section className="bg-[#F9F8F6] py-16 lg:py-24">
           <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
             <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] mb-6 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-              Ready for an independent perspective?
+              Have a project ahead worth aligning?
             </h2>
             <p className="text-lg text-[#4B5563] leading-relaxed mb-10">
-              A confidential conversation is the first step toward strategic clarity.
+              A confidential conversation is the first step.
             </p>
             <Link
               href="/contact"

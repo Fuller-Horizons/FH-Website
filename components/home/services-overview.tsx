@@ -2,24 +2,24 @@ import Link from "next/link"
 
 const services = [
   {
-    title: "Technology Alignment Review",
-    description: "Executive clarity on your current technology and vendors",
+    title: "Alignment Audit",
+    description:
+      "Surface misalignment risks, scope gaps, and budget exposure before execution begins. Entry engagement.",
   },
   {
-    title: "Operational Risk & Vendor Review",
-    description: "Identify risks, gaps, and misalignment before they cost you",
+    title: "Alignment Architecture",
+    description:
+      "Fully define scope, stakeholder roles, decision rights, and the execution roadmap so the project is ready to run without ambiguity.",
   },
   {
-    title: "Strategic Technology Advisory",
-    description: "Fractional CIO-level guidance without vendor bias",
+    title: "Alignment Enforcement",
+    description:
+      "Independent oversight during execution — facilitating decisions, protecting scope, and keeping stakeholders aligned as the project moves.",
   },
   {
-    title: "Vendor Selection & RFP Advisory",
-    description: "Structured, defensible vendor selection",
-  },
-  {
-    title: "Quarterly Vendor Oversight",
-    description: "Ongoing independent vendor governance",
+    title: "Project Participation",
+    description:
+      "Selective % engagement on large, well-scoped projects with trusted partners — ongoing alignment ownership through delivery.",
   },
 ]
 
@@ -28,7 +28,7 @@ export function ServicesOverview() {
     <section className="bg-[#F3F2EF] py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-          How Fuller Horizons Works With You
+          How Fuller Horizons Engages
         </h2>
 
         <div className="space-y-4">

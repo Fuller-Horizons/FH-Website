@@ -12,13 +12,13 @@ const footerLinks = [
   { href: "/contact", label: "Contact" },
 ]
 
-const missionStatement = "We provide independent, vendor-neutral advisory to executives and boards navigating governance, technology, and regulatory complexity. Our fixed-scope engagements deliver clarity where ambiguity threatens value creation."
+const missionStatement = "Fuller Horizons is an alignment consulting firm. We ensure business, technology, and execution partners are aligned before capital is deployed — preventing the costly mistakes that derail projects after money is committed."
 
 const advisoryAreas = [
-  "Governance Clarity",
-  "Vendor Accountability",
-  "Risk Visibility",
-  "Executive Decision Support"
+  "Alignment Audits",
+  "Alignment Architecture",
+  "Alignment Enforcement",
+  "Project Participation"
 ]
 
 const geographicFocus = [
@@ -114,7 +114,7 @@ export function Footer() {
           {/* Tagline and Copyright */}
           <div className="text-right">
             <p className="text-[#D4AF37] text-sm font-semibold mb-2">
-              Driven to Innovate. Anchored in Integrity.
+              Alignment before execution determines outcome.
             </p>
             <p className="text-white/50 text-xs">
               {currentYear} Fuller Horizons. All rights reserved.

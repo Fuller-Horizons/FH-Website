@@ -1,8 +1,8 @@
 const trustItems = [
-  "I do not manage IT systems — your providers and IT team handle operations",
-  "I do not hold administrative credentials — your security stays intact",
-  "I do not implement technical changes — that remains with your trusted providers",
-  "I do not resell vendor services — my recommendations are always unbiased",
+  "I do not implement the work — execution stays with your chosen vendors and partners",
+  "I do not resell vendor services or accept referral fees — recommendations are unbiased",
+  "I do not hold administrative credentials or operate your systems",
+  "I disqualify engagements where alignment is not possible — no unpaid discovery, no scope creep",
 ]
 
 export function TrustSection() {
@@ -14,7 +14,8 @@ export function TrustSection() {
         </h2>
 
         <p className="text-lg text-white/80 leading-relaxed text-center mb-10">
-          Fuller Horizons provides strategic advisory — never implementation. This independence is what makes the guidance trustworthy.
+          Fuller Horizons sits between the business and the people delivering the work.
+          That position only stays trustworthy if the incentives stay clean.
         </p>
 
         <div className="space-y-4 mb-10">
@@ -32,7 +33,9 @@ export function TrustSection() {
         </div>
 
         <p className="text-base text-white/70 leading-relaxed text-center">
-          When technical discovery is needed, it is performed by client-approved specialists. I remain focused on strategic clarity and alignment.
+          When deeper technical or operational discovery is needed, it is performed by
+          client-approved specialists. Fuller Horizons remains focused on alignment,
+          structure, and decision integrity.
         </p>
       </div>
     </section>

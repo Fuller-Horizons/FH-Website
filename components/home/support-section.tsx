@@ -1,8 +1,8 @@
 const clarifyItems = [
-  "How well your technology, vendors, and IT team are aligned with your current business goals",
-  "Where opportunities exist to reduce risk and strengthen your operational foundation",
-  "Whether your technology investments are delivering the value your business needs to grow",
-  "What decisions should be framed and prioritized before major commitments are made",
+  "Where misalignment between stakeholders, vendors, and execution plans is putting your project at risk",
+  "Which assumptions, scope gaps, and undefined ownership are likely to cause budget overruns or delay",
+  "Whether your business goals translate cleanly into the technical and operational work being proposed",
+  "What needs to be decided, structured, and committed to before money is spent on execution",
 ]
 
 export function SupportSection() {
@@ -11,7 +11,7 @@ export function SupportSection() {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         {/* Section Title */}
         <h2 className="text-[28px] lg:text-[40px] font-medium text-[#0A1628] text-center mb-12 leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-          What Fuller Horizons Helps You See
+          What Misalignment Looks Like — Before You Spend
         </h2>
 
         {/* Items */}

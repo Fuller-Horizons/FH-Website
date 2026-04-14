@@ -1,26 +1,26 @@
-import { Shield, Users, HeartPulse, FileText } from "lucide-react"
+import { Target, Layers, Users, ShieldCheck } from "lucide-react"
 
 export function FrameworksSection() {
   const frameworks = [
     {
-      icon: Shield,
-      title: "Seatbelt",
-      description: "Risk Protection Without Slowing Progress",
+      icon: Target,
+      title: "Defined Objective",
+      description: "What success actually looks like — written, agreed, and testable.",
+    },
+    {
+      icon: Layers,
+      title: "Structured Scope",
+      description: "Boundaries, assumptions, and dependencies surfaced before contracts.",
     },
     {
       icon: Users,
-      title: "Governance Board",
-      description: "Structured Oversight",
+      title: "Stakeholder Alignment",
+      description: "Decision rights, ownership, and expectations made explicit.",
     },
     {
-      icon: HeartPulse,
-      title: "Preventative Healthcare",
-      description: "Early Risk Detection",
-    },
-    {
-      icon: FileText,
-      title: "Emergency Plan",
-      description: "Prepared Crisis Response",
+      icon: ShieldCheck,
+      title: "Execution Viability",
+      description: "Vendor and partner readiness verified before capital is committed.",
     },
   ]
 
@@ -30,7 +30,7 @@ export function FrameworksSection() {
         {/* Header */}
         <div className="mb-16 text-center">
           <h2 className="text-[28px] lg:text-[40px] font-medium text-white leading-snug" style={{ fontFamily: "var(--font-display)" }}>
-            Frameworks Prevent Avoidable Mistakes.
+            What Alignment Looks Like in Practice.
           </h2>
           <div className="mx-auto mt-4 h-px w-24 bg-[#A89060]" />
         </div>
